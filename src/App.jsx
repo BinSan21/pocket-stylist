@@ -2,16 +2,16 @@ import { useState } from 'react';
 import { MapPin, ShoppingBag, Heart, Search, ChevronLeft, Layers, Home, X, Plus } from 'lucide-react';
 
 const INVENTORY = [
-  { id: 1, name: "Red Corduroy Shirt", price: 45.00, sizes: ["S", "M", "L"], location: "Floor 2, Aisle 4 - Casual Tops", category: "tops", image: "/image_c5b61e.jpg" },
-  { id: 2, name: "Brown Knit Polo", price: 38.00, sizes: ["M", "L"], location: "Floor 2, Aisle 4 - Casual Tops", category: "tops", image: "/image_c5b5c2.jpg" },
-  { id: 3, name: "Black Sweatpants", price: 55.00, sizes: ["S", "M", "L", "XL"], location: "Floor 1, Aisle 2 - Activewear", category: "bottoms", image: "/image_c5b29c.png" },
-  { id: 4, name: "Olive Cargo Pants", price: 65.00, sizes: ["M", "L", "XL"], location: "Floor 1, Aisle 6 - Streetwear", category: "bottoms", image: "/image_c5b295.jpg" },
-  { id: 5, name: "Khaki Chinos", price: 60.00, sizes: ["S", "M", "L"], location: "Floor 1, Aisle 5 - Mens Bottoms", category: "bottoms", image: "/image_c5b259.jpg" },
-  { id: 6, name: "Black Cargo Pants", price: 68.00, sizes: ["M", "L"], location: "Floor 1, Aisle 6 - Streetwear", category: "bottoms", image: "/image_c5b21e.png" },
-  { id: 7, name: "Layered Grey Hoodie", price: 50.00, sizes: ["S", "M", "L"], location: "Floor 2, Aisle 1 - Outerwear", category: "tops", image: "/image_c56064.jpg" },
-  { id: 8, name: "Graphic Off-Shoulder", price: 32.00, sizes: ["XS", "S", "M"], location: "Floor 3, Aisle 2 - Womens", category: "tops", image: "/image_c55c24.png" },
-  { id: 9, name: "Cropped Leather Moto", price: 120.00, sizes: ["S", "M"], location: "Floor 3, Aisle 5 - Womens Outerwear", category: "tops", image: "/image_c55b85.jpg" },
-  { id: 10, name: "Wide Leg Denim", price: 75.00, sizes: ["26", "28", "30"], location: "Floor 3, Aisle 8 - Denim", category: "bottoms", image: "/image_c55802.jpg" }
+  { id: 1, name: "Red Corduroy Shirt", price: 45.00, sizes: ["S", "M", "L"], location: "Floor 2, Aisle 4 - Casual Tops", category: "tops", image: "/pocket-stylist/image_c5b61e.jpg" },
+  { id: 2, name: "Brown Knit Polo", price: 38.00, sizes: ["M", "L"], location: "Floor 2, Aisle 4 - Casual Tops", category: "tops", image: "/pocket-stylist/image_c5b5c2.jpg" },
+  { id: 3, name: "Black Sweatpants", price: 55.00, sizes: ["S", "M", "L", "XL"], location: "Floor 1, Aisle 2 - Activewear", category: "bottoms", image: "/pocket-stylist/image_c5b29c.png" },
+  { id: 4, name: "Olive Cargo Pants", price: 65.00, sizes: ["M", "L", "XL"], location: "Floor 1, Aisle 6 - Streetwear", category: "bottoms", image: "/pocket-stylist/image_c5b295.jpg" },
+  { id: 5, name: "Khaki Chinos", price: 60.00, sizes: ["S", "M", "L"], location: "Floor 1, Aisle 5 - Mens Bottoms", category: "bottoms", image: "/pocket-stylist/image_c5b259.jpg" },
+  { id: 6, name: "Black Cargo Pants", price: 68.00, sizes: ["M", "L"], location: "Floor 1, Aisle 6 - Streetwear", category: "bottoms", image: "/pocket-stylist/image_c5b21e.png" },
+  { id: 7, name: "Layered Grey Hoodie", price: 50.00, sizes: ["S", "M", "L"], location: "Floor 2, Aisle 1 - Outerwear", category: "tops", image: "/pocket-stylist/image_c56064.jpg" },
+  { id: 8, name: "Graphic Off-Shoulder", price: 32.00, sizes: ["XS", "S", "M"], location: "Floor 3, Aisle 2 - Womens", category: "tops", image: "/pocket-stylist/image_c55c24.png" },
+  { id: 9, name: "Cropped Leather Moto", price: 120.00, sizes: ["S", "M"], location: "Floor 3, Aisle 5 - Womens Outerwear", category: "tops", image: "/pocket-stylist/image_c55b85.jpg" },
+  { id: 10, name: "Wide Leg Denim", price: 75.00, sizes: ["26", "28", "30"], location: "Floor 3, Aisle 8 - Denim", category: "bottoms", image: "/pocket-stylist/image_c55802.jpg" }
 ];
 
 const StoreMap = ({ items }) => {
