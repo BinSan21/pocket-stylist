@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Nunito:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-warm-beige: #EADEC8;
+  --color-mocha-brown: #7E5B42;
+  --color-sage-green: #8A9A86;
+  --color-lavender: #D8CBE3;
+  --color-soft-peach: #F5D3C8;
+  --font-sans: "Nunito", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
+
+body {
+  background-color: var(--color-warm-beige);
+  color: var(--color-mocha-brown);
+  font-family: var(--font-sans);
+  margin: 0;
+}
